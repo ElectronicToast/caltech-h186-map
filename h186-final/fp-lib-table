@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name map-logos)(type KiCad)(uri C:/Users/Ray/Documents/GitHub/h186-final/lib/footprints/map-logos.pretty)(options "")(descr ""))
+)
