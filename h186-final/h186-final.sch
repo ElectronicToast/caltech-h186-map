@@ -1,4 +1,485 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 29 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5CEECB85
+P 1550 1650
+F 0 "BT1" H 1700 1750 50  0000 L CNN
+F 1 "18650-25R" H 1700 1650 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_1042_1x18650" V 1550 1710 50  0001 C CNN
+F 3 "~" V 1550 1710 50  0001 C CNN
+	1    1550 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR02
+U 1 1 5CEED360
+P 1550 1450
+F 0 "#PWR02" H 1550 1300 50  0001 C CNN
+F 1 "VCC" H 1600 1650 50  0000 C CNN
+F 2 "" H 1550 1450 50  0001 C CNN
+F 3 "" H 1550 1450 50  0001 C CNN
+	1    1550 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5CEED724
+P 1550 1750
+F 0 "#PWR04" H 1550 1500 50  0001 C CNN
+F 1 "GND" H 1600 1550 50  0000 C CNN
+F 2 "" H 1550 1750 50  0001 C CNN
+F 3 "" H 1550 1750 50  0001 C CNN
+	1    1550 1750
+	1    0    0    -1  
+$EndComp
+Text Notes 1450 1050 0    50   ~ 0
+POWER
+$Comp
+L Device:LED_Small_ALT D1
+U 1 1 5CEEEE13
+P 3650 1050
+F 0 "D1" V 3700 950 50  0000 R CNN
+F 1 "RED" V 3600 950 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3650 1050 50  0001 C CNN
+F 3 "~" V 3650 1050 50  0001 C CNN
+	1    3650 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 5CEEF8BD
+P 3650 1350
+F 0 "R1" H 3750 1400 50  0000 L CNN
+F 1 "100" H 3750 1300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3650 1350 50  0001 C CNN
+F 3 "~" H 3650 1350 50  0001 C CNN
+	1    3650 1350
+	1    0    0    -1  
+$EndComp
+Text Notes 650  650  0    50   ~ 0
+ALL LEDS ASSUME VCC = 3.7V AND 2 mA CURRENT
+$Comp
+L Device:LED_Small_ALT D2
+U 1 1 5CEF075F
+P 4000 1050
+F 0 "D2" V 4050 950 50  0000 R CNN
+F 1 "RED" V 3950 950 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4000 1050 50  0001 C CNN
+F 3 "~" V 4000 1050 50  0001 C CNN
+	1    4000 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small_ALT D3
+U 1 1 5CEF09FC
+P 4350 1050
+F 0 "D3" V 4400 950 50  0000 R CNN
+F 1 "RED" V 4300 950 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4350 1050 50  0001 C CNN
+F 3 "~" V 4350 1050 50  0001 C CNN
+	1    4350 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small_ALT D4
+U 1 1 5CEF0CE6
+P 4700 1050
+F 0 "D4" V 4750 950 50  0000 R CNN
+F 1 "RED" V 4650 950 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4700 1050 50  0001 C CNN
+F 3 "~" V 4700 1050 50  0001 C CNN
+	1    4700 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small_ALT D5
+U 1 1 5CEF1160
+P 5050 1050
+F 0 "D5" V 5100 950 50  0000 R CNN
+F 1 "RED" V 5000 950 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5050 1050 50  0001 C CNN
+F 3 "~" V 5050 1050 50  0001 C CNN
+	1    5050 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 5CEF17F5
+P 3650 850
+F 0 "#PWR01" H 3650 700 50  0001 C CNN
+F 1 "VCC" H 3700 1050 50  0000 C CNN
+F 2 "" H 3650 850 50  0001 C CNN
+F 3 "" H 3650 850 50  0001 C CNN
+	1    3650 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1550 3650 1450
+$Comp
+L power:GND #PWR03
+U 1 1 5CEF2225
+P 3050 1550
+F 0 "#PWR03" H 3050 1300 50  0001 C CNN
+F 1 "GND" H 3100 1350 50  0000 C CNN
+F 2 "" H 3050 1550 50  0001 C CNN
+F 3 "" H 3050 1550 50  0001 C CNN
+	1    3050 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1150 3650 1200
+Wire Wire Line
+	3650 1200 4000 1200
+Wire Wire Line
+	3650 1200 3650 1250
+Wire Wire Line
+	4000 1200 4000 1150
+Connection ~ 4000 1200
+Wire Wire Line
+	4000 1200 4350 1200
+Wire Wire Line
+	4350 1150 4350 1200
+Connection ~ 4350 1200
+Wire Wire Line
+	4700 1150 4700 1200
+Wire Wire Line
+	4700 1200 4350 1200
+Wire Wire Line
+	5050 1150 5050 1200
+Wire Wire Line
+	5050 1200 4700 1200
+Connection ~ 4700 1200
+Wire Wire Line
+	3650 950  3650 900 
+Wire Wire Line
+	3650 900  4000 900 
+Wire Wire Line
+	4000 950  4000 900 
+Connection ~ 4000 900 
+Wire Wire Line
+	4000 900  4350 900 
+Wire Wire Line
+	4350 950  4350 900 
+Connection ~ 4350 900 
+Wire Wire Line
+	4700 950  4700 900 
+Wire Wire Line
+	4700 900  4350 900 
+Wire Wire Line
+	5050 950  5050 900 
+Wire Wire Line
+	5050 900  4700 900 
+Connection ~ 4700 900 
+Connection ~ 3650 1200
+Wire Wire Line
+	3450 1550 3650 1550
+Wire Wire Line
+	3650 850  3650 900 
+Connection ~ 3650 900 
+$Comp
+L Device:LED_Small_ALT D6
+U 1 1 5CEF7FF5
+P 5400 1050
+F 0 "D6" V 5450 950 50  0000 R CNN
+F 1 "RED" V 5350 950 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5400 1050 50  0001 C CNN
+F 3 "~" V 5400 1050 50  0001 C CNN
+	1    5400 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small_ALT D7
+U 1 1 5CEF7FFF
+P 5750 1050
+F 0 "D7" V 5800 950 50  0000 R CNN
+F 1 "RED" V 5700 950 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5750 1050 50  0001 C CNN
+F 3 "~" V 5750 1050 50  0001 C CNN
+	1    5750 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small_ALT D8
+U 1 1 5CEF8009
+P 6100 1050
+F 0 "D8" V 6150 950 50  0000 R CNN
+F 1 "RED" V 6050 950 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6100 1050 50  0001 C CNN
+F 3 "~" V 6100 1050 50  0001 C CNN
+	1    6100 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small_ALT D9
+U 1 1 5CEF8013
+P 6450 1050
+F 0 "D9" V 6500 950 50  0000 R CNN
+F 1 "RED" V 6400 950 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6450 1050 50  0001 C CNN
+F 3 "~" V 6450 1050 50  0001 C CNN
+	1    6450 1050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 1200 5400 1200
+Wire Wire Line
+	5400 1200 5400 1150
+Connection ~ 5400 1200
+Wire Wire Line
+	5400 1200 5750 1200
+Wire Wire Line
+	5750 1150 5750 1200
+Connection ~ 5750 1200
+Wire Wire Line
+	6100 1150 6100 1200
+Wire Wire Line
+	6100 1200 5750 1200
+Wire Wire Line
+	6450 1150 6450 1200
+Wire Wire Line
+	6450 1200 6100 1200
+Connection ~ 6100 1200
+Wire Wire Line
+	5050 900  5400 900 
+Wire Wire Line
+	5400 950  5400 900 
+Connection ~ 5400 900 
+Wire Wire Line
+	5400 900  5750 900 
+Wire Wire Line
+	5750 950  5750 900 
+Connection ~ 5750 900 
+Wire Wire Line
+	6100 950  6100 900 
+Wire Wire Line
+	6100 900  5750 900 
+Wire Wire Line
+	6450 950  6450 900 
+Wire Wire Line
+	6450 900  6100 900 
+Connection ~ 6100 900 
+Connection ~ 5050 900 
+Connection ~ 5050 1200
+$Comp
+L Device:LED_Small_ALT D10
+U 1 1 5CEFB021
+P 6800 1050
+F 0 "D10" V 6850 950 50  0000 R CNN
+F 1 "RED" V 6750 950 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6800 1050 50  0001 C CNN
+F 3 "~" V 6800 1050 50  0001 C CNN
+	1    6800 1050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6800 1150 6800 1200
+Wire Wire Line
+	6800 1200 6450 1200
+Wire Wire Line
+	6800 950  6800 900 
+Wire Wire Line
+	6800 900  6450 900 
+Connection ~ 6450 900 
+Connection ~ 6450 1200
+Text Notes 5100 700  0    50   ~ 0
+MOORE LAB
+$Comp
+L Device:LED_Small_ALT D11
+U 1 1 5CF036BC
+P 3650 2450
+F 0 "D11" V 3700 2350 50  0000 R CNN
+F 1 "YEL" V 3600 2350 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3650 2450 50  0001 C CNN
+F 3 "~" V 3650 2450 50  0001 C CNN
+	1    3650 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small_US R2
+U 1 1 5CF036C6
+P 3650 2750
+F 0 "R2" H 3750 2800 50  0000 L CNN
+F 1 "100" H 3750 2700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3650 2750 50  0001 C CNN
+F 3 "~" H 3650 2750 50  0001 C CNN
+	1    3650 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D12
+U 1 1 5CF036D0
+P 4000 2450
+F 0 "D12" V 4050 2350 50  0000 R CNN
+F 1 "YEL" V 3950 2350 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4000 2450 50  0001 C CNN
+F 3 "~" V 4000 2450 50  0001 C CNN
+	1    4000 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small_ALT D13
+U 1 1 5CF036DA
+P 4350 2450
+F 0 "D13" V 4400 2350 50  0000 R CNN
+F 1 "YEL" V 4300 2350 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4350 2450 50  0001 C CNN
+F 3 "~" V 4350 2450 50  0001 C CNN
+	1    4350 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small_ALT D14
+U 1 1 5CF036E4
+P 4700 2450
+F 0 "D14" V 4750 2350 50  0000 R CNN
+F 1 "ORG" V 4650 2350 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4700 2450 50  0001 C CNN
+F 3 "~" V 4700 2450 50  0001 C CNN
+	1    4700 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small_ALT D15
+U 1 1 5CF036EE
+P 5050 2450
+F 0 "D15" V 5100 2350 50  0000 R CNN
+F 1 "YEL" V 5000 2350 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5050 2450 50  0001 C CNN
+F 3 "~" V 5050 2450 50  0001 C CNN
+	1    5050 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR05
+U 1 1 5CF036F8
+P 3650 2250
+F 0 "#PWR05" H 3650 2100 50  0001 C CNN
+F 1 "VCC" H 3700 2450 50  0000 C CNN
+F 2 "" H 3650 2250 50  0001 C CNN
+F 3 "" H 3650 2250 50  0001 C CNN
+	1    3650 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2950 3650 2850
+$Comp
+L power:GND #PWR06
+U 1 1 5CF03705
+P 3050 2950
+F 0 "#PWR06" H 3050 2700 50  0001 C CNN
+F 1 "GND" H 3100 2750 50  0000 C CNN
+F 2 "" H 3050 2950 50  0001 C CNN
+F 3 "" H 3050 2950 50  0001 C CNN
+	1    3050 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2550 3650 2600
+Wire Wire Line
+	3650 2600 4000 2600
+Wire Wire Line
+	3650 2600 3650 2650
+Wire Wire Line
+	4000 2600 4000 2550
+Connection ~ 4000 2600
+Wire Wire Line
+	4000 2600 4350 2600
+Wire Wire Line
+	4350 2550 4350 2600
+Connection ~ 4350 2600
+Wire Wire Line
+	4700 2550 4700 2600
+Wire Wire Line
+	4700 2600 4350 2600
+Wire Wire Line
+	5050 2550 5050 2600
+Wire Wire Line
+	5050 2600 4700 2600
+Connection ~ 4700 2600
+Wire Wire Line
+	3650 2350 3650 2300
+Wire Wire Line
+	3650 2300 4000 2300
+Wire Wire Line
+	4000 2350 4000 2300
+Connection ~ 4000 2300
+Wire Wire Line
+	4000 2300 4350 2300
+Wire Wire Line
+	4350 2350 4350 2300
+Connection ~ 4350 2300
+Wire Wire Line
+	4700 2350 4700 2300
+Wire Wire Line
+	4700 2300 4350 2300
+Wire Wire Line
+	5050 2350 5050 2300
+Wire Wire Line
+	5050 2300 4700 2300
+Connection ~ 4700 2300
+Connection ~ 3650 2600
+Wire Wire Line
+	3450 2950 3650 2950
+Wire Wire Line
+	3650 2250 3650 2300
+Connection ~ 3650 2300
+$Comp
+L Device:LED_Small_ALT D16
+U 1 1 5CF0372E
+P 5400 2450
+F 0 "D16" V 5450 2350 50  0000 R CNN
+F 1 "YEL" V 5350 2350 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5400 2450 50  0001 C CNN
+F 3 "~" V 5400 2450 50  0001 C CNN
+	1    5400 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 2600 5400 2600
+Wire Wire Line
+	5400 2600 5400 2550
+Wire Wire Line
+	5050 2300 5400 2300
+Wire Wire Line
+	5400 2350 5400 2300
+Connection ~ 5050 2300
+Connection ~ 5050 2600
+Text Notes 5100 2100 0    50   ~ 0
+DABNEY HALL
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5CF119F8
+P 3250 2950
+F 0 "SW2" H 3250 3250 50  0000 C CNN
+F 1 "SW_Push" H 3250 3150 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3250 3150 50  0001 C CNN
+F 3 "~" H 3250 3150 50  0001 C CNN
+	1    3250 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5CF121B9
+P 3250 1550
+F 0 "SW1" H 3250 1850 50  0000 C CNN
+F 1 "SW_Push" H 3250 1750 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3250 1750 50  0001 C CNN
+F 3 "~" H 3250 1750 50  0001 C CNN
+	1    3250 1550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
